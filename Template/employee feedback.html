@@ -1,0 +1,74 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Feedback System</title>
+    <link rel="stylesheet" href="{% static 'efsapp/employee_style.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">EFS</div>
+        <div class="nav-links">
+            <a href="employee feedback.html">Home</a>
+            <a href="#About us">About us</a>
+            <a href="#Contact">Contact</a>
+            <a href="login.html" class="btn-portal">Login</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div style="text-transform: uppercase; letter-spacing: 4px; color: var(--accent); font-weight: 600; margin-bottom: 20px;">Employee Feedback System</div>
+        <h1>Built better<br> with your feedback.</h1>
+        <p style="color: var(--dim); max-width: 600px; margin-top: 20px;">A new perspective for your company's growth. An equal and powerful platform for admin, manager and employee.</p>
+    </header>
+
+    <section id="company" class="content-grid">
+        <div class="company-info">
+            <h2>Make your company's culture digital.</h2>
+            <p>We don't just create a feedback system, we create an environment where every employee's voice is heard.</p>
+            <p>With real-time analytics and encrypted data, managers will now be able to make better decisions.</p>
+        </div>
+        <div style="background: var(--card); border-radius: 40px; display: flex; align-items: center; justify-content: center; font-size: 50px; border: 1px dashed var(--dim);">
+            <img class="img" src="company.jpg">
+        </div>
+    </section>
+
+    <section id="roles" class="roles-container">
+        <div style="text-align: center; margin-bottom: 50px;">
+            <h2 style="font-size: 45px; background: linear-gradient(to right, var(--accent), var(--purple)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Our Purpose & Values</h2>
+            <p style="color: var(--dim); margin-top: 10px;">Building a transparent ecosystem for the modern workforce.</p>
+        </div>
+
+        <div class="role-grid">
+            <div class="role-box" style="border-left: 4px solid var(--accent);">
+                <div style="font-size: 40px; margin-bottom: 15px;">🚀</div>
+                <h3>Our Mission</h3>
+                <p>Our goal is to bring transparency in every company. We build tools that bridge the gap between leadership and employees and build a strong work culture.</p>
+            </div>
+
+            <div class="role-box" style="border-left: 4px solid var(--purple);">
+                <div style="font-size: 40px; margin-bottom: 15px;">👁️</div>
+                <h3>Our Vision</h3>
+                <p>We see a future where every talent is valued and every feedback becomes a stepping stone for growth. We want to make the workplace more humane through data-driven insights.</p>
+            </div>
+
+            <div class="role-box" style="border-left: 4px solid #10b981;">
+                <div style="font-size: 40px; margin-bottom: 15px;">🤝</div>
+                <h3>Core Values</h3>
+                <p>Trust, honesty and continuous improvement are our core principles. We believe that right feedback is the key to true success.</p>
+            </div>
+        </div>
+    </section>
+	
+    <footer>
+        <center><p style="color: var(--dim);">© 2026 EFS | BCA Final Year Project</p></center>
+        <!-- <div>
+            <a href="admin_login.html" class="maintenance-link">System Maintenance Mode</a>
+        </div> -->
+    </footer>
+
+</body>
+</html>
